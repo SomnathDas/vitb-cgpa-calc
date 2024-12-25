@@ -194,7 +194,7 @@ export default function CGPACalculator() {
           <CardHeader className="flex flex-row items-center justify-between">
             <div>
               <CardTitle>Semester {semester.number}</CardTitle>
-              <CardDescription>Enter course details for this semester</CardDescription>
+              <CardDescription>Enter <strong>[GRADE, COURSE CREDIT]</strong> respectively for each course.</CardDescription>
             </div>
             <Button variant="destructive" size="icon" onClick={() => removeSemester(semester.id)}>
               <Trash2 className="h-4 w-4" />
@@ -288,4 +288,3 @@ export default function CGPACalculator() {
     </div>
   )
 }
-
